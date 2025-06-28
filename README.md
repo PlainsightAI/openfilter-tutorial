@@ -91,7 +91,7 @@ You should see the processed video stream with object detection overlays and rea
 ## 📁 Project Structure
 
 ```
-openfilter-example/
+openfilter-tutorial/
 ├── run.py              # Main pipeline runner
 ├── filter_yolo.py      # YOLO object detection filter
 ├── filter_db.py        # Database logging filter
