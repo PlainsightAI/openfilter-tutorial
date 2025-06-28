@@ -1,0 +1,5 @@
+.env
+yolov8n.pt
+logs/
+.venv/
+__pycache__/
