@@ -93,13 +93,16 @@ You should see the processed video stream with object detection overlays and rea
 ```
 openfilter-tutorial/
 ├── run.py              # Main pipeline runner
-├── filter_yolo.py      # YOLO object detection filter
-├── filter_db.py        # Database logging filter
-├── detect_object.py    # YOLO detection utilities
+├── filters/            # Custom filter implementations
+│   ├── filter_yolo.py  # YOLO object detection filter
+│   └── filter_db.py    # Database logging filter
+├── utils/              # Utility functions
+│   └── detect_object.py # YOLO detection utilities
 ├── requirements.txt    # Python dependencies
-├── yolov8n.pt         # YOLOv8 model file (download separately)
+├── yolov8n.pt         # YOLOv8 model file
 ├── example_video.mp4  # Sample video for testing
 ├── .env               # Database configuration (create this)
+├── logs/              # Application logs
 └── README.md          # This file
 ```
 

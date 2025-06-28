@@ -1,5 +1,5 @@
 from openfilter.filter_runtime.filter import Filter, FilterConfig, Frame
-from detect_object import detect_objects_from_array
+from utils.detect_object import detect_objects_from_array
 import logging
 
 logger = logging.getLogger(__name__)
