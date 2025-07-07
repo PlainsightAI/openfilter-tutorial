@@ -7,7 +7,7 @@ from filters.filter_db import DBFilter
 if __name__ == "__main__":
     Filter.run_multi([
         (VideoIn, dict(
-            sources='file://example_video.mp4!loop',
+            sources='file://example_video.mp4!loop',  # Can also use: 'rtsp://username:password@ip:port/path'
             outputs='tcp://*:5550',
         )),
         (YOLOFilter, dict(

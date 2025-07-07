@@ -20,7 +20,7 @@ The pipeline consists of four main components:
 
 ## 📋 Prerequisites
 
-- Python 3.8+
+- Python 3.10+
 - PostgreSQL database
 - Virtual environment (recommended)
 
@@ -123,6 +123,12 @@ The database connection is configured via environment variables in `.env`:
 Each filter can be configured by modifying the parameters in `run.py`:
 
 - **VideoIn**: Change video source, enable/disable loop
+  - **Video Sources**: The VideoIn filter supports multiple input formats:
+    - `file://path/to/video.mp4` - Local video files
+    - `file://path/to/video.mp4!loop` - Loop the video continuously
+    - `rtsp://path:port/name` - RTSP streams
+    - `webcam://0` - First webcam device
+    - `webcam://1` - Second webcam device (if available)
 - **YOLOFilter**: Adjust detection confidence thresholds
 - **DBFilter**: Modify person count logging logic
 - **Webvis**: Change web interface port and settings
